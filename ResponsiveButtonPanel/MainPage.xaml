@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="ResponsiveButtonPanel.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ResponsiveButtonPanel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="ResponsiveButtonPanel Demo" HorizontalAlignment="Center" VerticalAlignment="Center" />
+
+        <local:ResponsiveButtonPanel Grid.Row="1" MoreButtonStyle="{StaticResource ResponsiveButtonPanelButtonStyle}">
+            <local:ResponsiveButtonPanel.Elements>
+                <local:ResponsiveButtonPanelButton Text="Select All" Glyph="&#xE001;" Click="ResponsiveButtonPanelButton_Click" />
+                <local:ResponsiveButtonPanelButton Text="Pin" Glyph="&#xE840;" Click="ResponsiveButtonPanelButton_Click" />
+                <local:ResponsiveButtonPanelButton Text="Edit" Glyph="&#xE70F;" Click="ResponsiveButtonPanelButton_Click" />
+                <local:ResponsiveButtonPanelButton Text="Trim" Glyph="&#xE8AF;" Click="ResponsiveButtonPanelButton_Click" />
+                <local:ResponsiveButtonPanelButton Text="Export" Glyph="&#xE8AD;" Click="ResponsiveButtonPanelButton_Click" />
+                <local:ResponsiveButtonPanelButton Text="Shop" Glyph="&#xE7BF;" Click="ResponsiveButtonPanelButton_Click" />
+                <local:ResponsiveButtonPanelButton Text="Select None" Glyph="&#xE711;"  Click="ResponsiveButtonPanelButton_Click" />
+            </local:ResponsiveButtonPanel.Elements>
+        </local:ResponsiveButtonPanel>
+    </Grid>
+</Page>
