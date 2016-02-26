@@ -15,7 +15,7 @@
 
         <TextBlock Text="ResponsiveButtonPanel Demo" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
-        <local:ResponsiveButtonPanel Grid.Row="1" MoreButtonStyle="{StaticResource ResponsiveButtonPanelButtonStyle}">
+        <local:ResponsiveButtonPanel Grid.Row="1" MoreButtonStyle="{StaticResource ResponsiveButtonPanelMoreButtonStyle}">
             <local:ResponsiveButtonPanel.Elements>
                 <local:ResponsiveButtonPanelButton Text="Select All" Glyph="&#xE001;" Click="ResponsiveButtonPanelButton_Click" />
                 <local:ResponsiveButtonPanelButton Text="Pin" Glyph="&#xE840;" Click="ResponsiveButtonPanelButton_Click" />

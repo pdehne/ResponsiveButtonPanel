@@ -25,7 +25,6 @@
 
                         <ItemsControl x:Name="CommandsPanel"
                                       Background="{TemplateBinding Background}"
-                                      MinHeight="{ThemeResource AppBarThemeMinHeight}"
                                       IsTabStop="False"
                                       Grid.Column="0">
                             <ItemsControl.ItemsPanel>
@@ -39,14 +38,7 @@
                                 Grid.Column="1"
                                 Foreground="{TemplateBinding Foreground}"
                                 Background="{TemplateBinding Background}"
-                                MinHeight="64"
-                                MinWidth="48"
                                 Style="{TemplateBinding MoreButtonStyle}">
-
-                            <StackPanel Orientation="Vertical" MinWidth="48">
-                                <FontIcon Name="Icon" Glyph="&#xE10C;" HorizontalAlignment="Center" />
-                                <TextBlock Name="Caption" Text="More" FontSize="14" HorizontalAlignment="Center" />
-                            </StackPanel>
                         </Button>
                     </Grid>
                 </ControlTemplate>
