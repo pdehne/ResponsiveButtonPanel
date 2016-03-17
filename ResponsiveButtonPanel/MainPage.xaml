@@ -23,7 +23,7 @@
                 <local:ResponsiveButtonPanelButton Text="Trim" Glyph="&#xE8AF;" Click="ResponsiveButtonPanelButton_Click" />
                 <local:ResponsiveButtonPanelButton Text="Export" Glyph="&#xE8AD;" Click="ResponsiveButtonPanelButton_Click" />
                 <local:ResponsiveButtonPanelButton Text="Shop" Glyph="&#xE7BF;" Click="ResponsiveButtonPanelButton_Click" />
-                <local:ResponsiveButtonPanelButton Text="Select None" Glyph="&#xE711;"  Click="ResponsiveButtonPanelButton_Click" />
+                <local:ResponsiveButtonPanelButton Text="Select None" Glyph="&#xE711;" Pinned="True" Click="ResponsiveButtonPanelButton_Click" />
             </local:ResponsiveButtonPanel.Elements>
         </local:ResponsiveButtonPanel>
     </Grid>

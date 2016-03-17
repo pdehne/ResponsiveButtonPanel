@@ -45,6 +45,11 @@ namespace ResponsiveButtonPanel
             typeof(ResponsiveButtonPanelButton),
             new PropertyMetadata(14.0));
 
+        public static readonly DependencyProperty PinnedProperty = DependencyProperty.Register("Pinned",
+            typeof(Boolean),
+            typeof(ResponsiveButtonPanelButton),
+            new PropertyMetadata(false));
+
         public event RoutedEventHandler Click;
 
         public ResponsiveButtonPanelButton()
@@ -90,6 +95,12 @@ namespace ResponsiveButtonPanel
         {
             get { return (Double)GetValue(TextFontSizeProperty); }
             set { SetValue(TextFontSizeProperty, value); }
+        }
+
+        public bool Pinned
+        {
+            get { return (bool)GetValue(PinnedProperty); }
+            set { SetValue(PinnedProperty, value); }
         }
 
         private bool isCompact = true;

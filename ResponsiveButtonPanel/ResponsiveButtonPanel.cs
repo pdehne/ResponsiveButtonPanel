@@ -12,6 +12,7 @@ namespace ResponsiveButtonPanel
     public interface IResponsiveButtonPanelElement
     {
         string Text { get; }
+        bool Pinned { get; }
         void RaiseClick();
     }
 
@@ -74,15 +75,16 @@ namespace ResponsiveButtonPanel
                 }
             }
 
-            // Make items invisible until the remaining items fit
-            // Make items that fit visible
+            // Make items that are not marked pinned invisible
+            // until the remaining items fit.
+            // Make items that fit or which are pinned visible
 
             for (int i = Elements.Count - 1; i >= 0; i--)
             {
                 var element = Elements[i];
                 var uiElement = element as UIElement;
 
-                if(totalRequestedWidth > availableSize.Width)
+                if(totalRequestedWidth > availableSize.Width && !element.Pinned)
                 {
                     uiElement.Visibility = Visibility.Collapsed;
 
